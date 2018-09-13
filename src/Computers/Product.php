@@ -2,7 +2,9 @@
 
 namespace SON\Store\Computers;
 
-class Product
+use SON\Store\Product as Type;
+
+class Product implements Type
 {
     public function getTitle()
     {

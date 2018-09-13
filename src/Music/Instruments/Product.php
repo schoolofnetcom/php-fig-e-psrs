@@ -2,7 +2,9 @@
 
 namespace SON\Store\Music\Instruments;
 
-class Product
+use SON\Store\Product as Type;
+
+class Product implements Type
 {
     public function getTitle()
     {

@@ -2,25 +2,15 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$product = new SON\Store\Computers\Product;
-echo $product->getTitle();
+use SON\Store\Computers\Product as Notebook;
+use SON\Store\Music\Instruments\Product as Piano;
+use SON\Store\Music\Audio\Product as InterfaceDeAudio;
+use SON\Store\ListProduct;
 
-echo PHP_EOL;
+$products = new ListProduct;
 
-$product = new SON\Store\Music\Instruments\Product;
-echo $product->getTitle();
+$products->addProduct(new Notebook);
+$products->addProduct(new Piano);
+$products->addProduct(new InterfaceDeAudio);
 
-echo PHP_EOL;
-
-$product = new SON\Store\Music\Audio\Product;
-echo $product->getTitle();
-
-echo PHP_EOL;
-
-$product = new SON\Store\ListProduct;
-echo $product->getAll();
-
-
-// $closureWithArgs = function ($arg1, $arg2 = null) {
-//     // body
-// };
+var_dump($products->getAll());
