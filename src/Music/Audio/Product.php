@@ -6,6 +6,8 @@ class Product
 {
     public function getTitle()
     {
-        return 'Interface de áudio';
+        if (true) {
+            return 'Interface de áudio';
+        }
     }
 }

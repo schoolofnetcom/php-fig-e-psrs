@@ -6,7 +6,9 @@
             "email": "erik.figueiredo@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "squizlabs/php_codesniffer": "^3.3"
+    },
     "autoload": {
         "psr-4": {
             "SON\\Store\\": "src"

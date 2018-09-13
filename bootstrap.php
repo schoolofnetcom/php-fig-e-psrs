@@ -19,3 +19,8 @@ echo PHP_EOL;
 
 $product = new SON\Store\ListProduct;
 echo $product->getAll();
+
+
+// $closureWithArgs = function ($arg1, $arg2 = null) {
+//     // body
+// };
