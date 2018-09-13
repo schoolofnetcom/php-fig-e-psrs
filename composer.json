@@ -1,0 +1,15 @@
+{
+    "name": "erik_/p",
+    "authors": [
+        {
+            "name": "Erik Figueiredo",
+            "email": "erik.figueiredo@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SON\\Store\\": "src"
+        }
+    }
+}
