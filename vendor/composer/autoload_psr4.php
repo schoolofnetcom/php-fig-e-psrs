@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'SON\\Store\\' => array($baseDir . '/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
 );

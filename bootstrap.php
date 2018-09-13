@@ -14,3 +14,7 @@ $products->addProduct(new Piano);
 $products->addProduct(new InterfaceDeAudio);
 
 var_dump($products->getAll());
+
+$logger = new SON\Store\Logger\Logger(__DIR__ . '/logs');
+$logger->log('info', 'O user {name} acabou de acessar a aplicação', ['name' => 'Erik']);
+$logger->log(\Psr\Log\LogLevel::ALERT, 'O site caiu');
